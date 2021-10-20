@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pemrograman Web 1</title>
+  <link rel="shortcut icon" href="Pictures/download.png">
+  <link rel="stylesheet" href="stylefadil.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<body>
+  <!--menu bar-->
+  <input type="checkbox" id="check">
+  <!--Bagian header -->
+  <header>
+    <label for="check">
+      <i class="fas fa-bars" id="sidebar"></i>
+    </label>
+    <div class="area_kiri">
+      <h1>Fadil<span> Wbste</span></h1>
+    </div>
+    <div class="area_kanan">
+      <a href="WebSederhanaFadil.html">Logout</a></li>
+    </div>
+  </header>
+  <!--Dashbord-->
+  <div class="dasbord">
+    <center><img src="pictures/foto+almet.jpg " class="profil" alt="profil">
+      <h3>Fadilahn Dzikril</h3>
+    </center>
+    <a href="WebSederhanaFadil.html"><i class="fas fa-home"></i><span>Dashbord</span></a>
+    <a href="UASgaleri.html"><i class="far fa-list-alt"></i></i><span>Galeri</span></a>
+    <a href="UASpendaftaran.html"><i class="far fa-registered"></i><span>Pendaftaran</span></a>
+    <a href="UASabout.html"><i class="far fa-address-card"></i><span>About</span></a>
+    <a href="UASkontak.html"><i class="fas fa-id-card-alt"></i><span>Kontak</span></a>
+  </div>
+  <div class="content">
+    <script src="js.js"></script>
+    <div class="kategori">
+      <h3> Form Pendaftaran </h3>
+      <table border="1" cellpadding="1" cellspacing="10">
+        <tr>
+          <td>
+            <table border="0">
+              <tr>
+                <td>
+                  <form name="data" method="post" action="">
+                    <table width="701" border="0">
+
+                      <tr>
+                        <td colspan="3">
+                          <div class="form">Form Biodata </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>NIM</td>
+                        <td>:</td>
+                        <td>
+                          <label>
+                            <input type="text" name="nim" value="" required>
+                          </label>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>
+                          <label>
+                            <input type="text" name="nama" value="" required>
+                          </label>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                          <input type="radio" value="wanita" name="wanita">Wanita
+                          <input type="radio" value="Pria" name="Wanita">Pria
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>No HP</td>
+                        <td>:</td>
+                        <td>
+                          <label>
+                            <input type="text" name="no_hp" value="" required>
+                          </label>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="al">Alamat :</td>
+                        <td></td>
+                        <td>
+                          <label>
+                            <textarea type="text" name="alamat" required></textarea>
+                          </label>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Minat</td>
+                        <td>:</td>
+                        <td>
+                          <select name="peminatan">
+                            <option>-Pilih-</option>
+                            <option>C++</option>
+                            <option>Java</option>
+                            <option>Phyton</option>
+                            <option>PHP</option>
+                            <option>Swict</option>
+                            <option>JavaScript</option>
+                          </select>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="3">
+                          <div align="center">
+                            <input name="" type="submit" value="proses" onClick="alertx(this.data)">
+                            <input name="" type="reset">
+                          </div>
+                        </td>
+                      </tr>
+
+                    </table>
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <footer>
+    <div class="foter">
+      <small>&copy; Copyright - 02-07-2021 - Universitas Pamulang <br> UAS pemrograman web 1</small>
+    </div>
+  </footer>
+</body>
+
+</html>

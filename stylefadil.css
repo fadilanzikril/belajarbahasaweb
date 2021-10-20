@@ -1,0 +1,331 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ /* clear fix*/
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ .cf {
+     *zoom: 1;
+ }
+ 
+
+
+/*Style Cascading Sheet*/
+/*header*/
+header {
+  z-index: 2;
+  background-color: rgb(64, 64, 65);
+  position: fixed;
+  padding: 20px;
+  width: 100%;
+  margin-top: -10px;
+  box-shadow: 2px 2px 4px  rgb(0, 0, 0,.8);
+}
+label #sidebar{
+  z-index: 1;
+  color: #ffff;
+  position: fixed;
+  cursor: pointer;
+  left: 300px;
+  font-size: 20px;
+  margin: 10px 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+label #sidebar:hover{
+  color: rgb(0, 242, 255)
+   ;
+}
+#check:checked~.dasbord{  left: -190px; 
+}
+
+#check:checked~.dasbord a span{display: none;}
+#check:checked~.dasbord a{
+  font-size: 20px;
+  margin-left: 160px;
+  width: 90px;
+}
+/*title*/
+.area_kiri h1{
+ color: #ffff;
+ margin: 0;
+ font-variant: small-caps;
+ font-size: 30px;
+ font-weight: 900px;
+ text-shadow: 2px 2px 2px black;
+}
+.area_kiri span{
+  color: rgb(0, 242, 255);
+}
+/*Botton keluar*/
+.area_kanan{
+  padding: 5px;
+  background: rgb(0, 242, 255);
+  float: right;
+  margin-top: -25px;
+  margin-right: 50px;
+  border-radius: 5px;
+  transition: 0.6s;
+  transition-property:  background;
+}
+.area_kanan a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.area_kanan:hover{
+  background: rgb(196, 196, 197);
+}
+.btn:hover{
+  background: green;
+}
+/*Dasbord*/
+.dasbord{
+  background:rgb(39, 44, 71);
+  margin-top:50px;
+  padding-top: 20px;
+  font-size: 20px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  transition: 0.6s;
+  transition-property: left;
+}
+.dasbord .profil{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+.dasbord h3{
+  font-size: 16px;
+  font-variant: small-caps;
+  color: #ffff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 2px black;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.dasbord a{
+  color: #ffff;
+  display: inline-block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px black;
+  padding-left: 50px;
+  box-sizing: border-box;
+  box-shadow: -1px 2px 2px -1px  black;
+  transition: 0.6s;
+}
+.dasbord a:hover{ 
+  text-shadow: none;
+  background: rgb(73, 76, 92) ;
+  color: black;
+  transform: scale(1.1);
+}
+
+.dasbord i{ padding-right: 20px;}
+
+/*bagroun tampilan awal*/
+.bg{
+  display:flex;
+  margin-left: 250px;
+  background-image: url(pictures/coding.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.6s;
+  margin-bottom: -60px;
+}
+#check:checked~.bg{
+  margin-left: 60px;
+}
+#check{
+  display: none;
+}
+.halaman h2{
+  margin: 20px 300px 20px 300px;
+  padding: 10px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+
+}
+.halaman h2:hover{
+  background: rgb(39, 44, 71);
+  color: black;
+  
+}
+.halaman p{
+  margin: 240px 100px 20px 100px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  font-variant: small-caps;
+  padding: 25px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+.halaman h2 a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/*Isi konten*/
+.content{
+  margin-left: 250px;
+  padding: 20px;
+  transition: 0.6s;
+}
+#check:checked~.content{
+  margin-left: 60px;
+}
+#check{
+  display: none;
+}
+.content .text{
+  padding: 10px;
+  background-color: rgb(210, 216, 216);
+  border-radius: 10px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 6px 4px -5px black;
+}
+.text img{
+  width: 150px;height: 130px;
+  float: left;
+  margin-right: 20px;
+  
+}
+.content .judul a{
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+
+.text p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 20px;
+}
+.text input{
+  padding: 3px 20px 3px 20px;
+  border-radius: 5px;
+  background-color: rgb(0, 242, 255);
+}
+.content .kategori {
+  margin-top: 60px;
+  text-align: justify;
+}
+.kategori h3{
+  border-bottom: 2px solid rgb(39, 44, 71);
+  font-size: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.kategori .kontak_info ul li{
+  display: inherit;
+  margin-bottom: 10px;
+}
+
+.kategori .form{
+  width: 100%;
+  margin-left: 435px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.kategori tr{
+  line-height: 30px;
+}
+.kategori tr .al{
+  position: absolute;
+  margin-top: 0;
+}
+.kontak_info ul li a{
+  text-decoration: none;
+  color: rgb(0, 242, 255);
+}
+.kontak_from input, textarea{
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 18;
+  border: 1px solid rgb(14, 13, 13);
+}
+.kontak_from .kontak-submit{
+  background-color: rgb(0, 242, 255);
+  color: #fff;
+  cursor: pointer;
+  width: 445px;
+}
+.foter{
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(12, 15, 34);
+  color: #ffff;
+  margin-bottom: 0;
+}
+.home{
+  margin-left: -80px;
+  padding-top: 80px;
+  padding-left: 90px;
+}
